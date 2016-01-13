@@ -20,8 +20,8 @@
 		 <div class="top-bar" id="example-menu">
   			<div class="top-bar-left">
     			<ul class="dropdown menu" data-dropdown-menu>
-      				<li class="menu-text">Wearables</li>
-     				<li><a href="#">Home</a></li>
+      				<li class="menu-text"><a href="#">Wearables</a></li>
+     		
       				<li><a href="#">Smartwatch</a></li>
       				<li><a href="#">Fitnesstracker</a></li>
       				
@@ -29,6 +29,18 @@
  			 </div>
   
 		</div>
+
+    <nav aria-label="You are here:" role="navigation">
+      <ul class="breadcrumbs" style="margin:10px">
+        <li><a href="#">Home</a></li>
+
+        <!-- <li><a href="#">Features</a></li>
+        <li class="disabled">Gene Splicing</li>
+        <li>
+          <span class="show-for-sr">Current: </span> Cloning
+        </li>-->
+      </ul>
+    </nav>
 
 
 
@@ -64,6 +76,54 @@
     </div>
 
     <div class="row">
+      <div class="small-2 columns">6 columns</div>
+      <div class="small-8 columns">
+        <div class="flex-video">
+            <iframe  src="https://www.youtube.com/embed/hrLX8Woiak8" frameborder="0" allowfullscreen></iframe> 
+        </div>
+      </div>
+      <div class="small-2 columns">6 columns</div>
+    </div>
+    
+
+
+    <div class="row collapse">
+  <div class="medium-3 columns">
+    <ul class="tabs vertical" id="example-vert-tabs" data-tabs>
+      <li class="tabs-title is-active"><a href="#panel1v" aria-selected="true">Smartwatches</a></li>
+      <li class="tabs-title"><a href="#panel2v">Tab 2</a></li>
+      <li class="tabs-title"><a href="#panel3v">Tab 3</a></li>
+      <li class="tabs-title"><a href="#panel4v">Tab 4</a></li>
+      <li class="tabs-title"><a href="#panel3v">Tab 5</a></li>
+      <li class="tabs-title"><a href="#panel4v">Tab 6</a></li>
+    </ul>
+    </div>
+    <div class="medium-9 columns">
+    <div class="tabs-content vertical" data-tabs-content="example-vert-tabs">
+      <div class="tabs-panel is-active" id="panel1v">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+      <div class="tabs-panel" id="panel2v">
+        <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
+      </div>
+      <div class="tabs-panel" id="panel3v">
+        <img class="thumbnail" src="assets/img/rectangle-3.jpg">
+      </div>
+      <div class="tabs-panel" id="panel4v">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+      <div class="tabs-panel" id="panel5v">
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div class="tabs-panel" id="panel6v">
+        <img class="thumbnail" src="assets/img/rectangle-5.jpg">
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    <div class="row">
         <div class="small-8 medium-6 large-5 small-centered columns">
 
           <div class="header panel">
@@ -78,6 +138,43 @@
 
       </div>
     </div>
+
+    <span class="alert label"><i class="fi-x-circle"></i> Alert Label</span>
+    <span class="warning label"><i class="fi-x"></i> Warning Label</span>
+    <span class="info label"><i class="fi-widget"></i> Info Label</span>
+    <span class="success label">Success Label</span>
+
+
+    <table class="stack">
+  <thead>
+    <tr>
+      <th>Cost and stuff</th>
+      <th>Taste</th>
+      <th>Calories</th>
+      <th>Overall</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Chocolate Chip</td>
+      <td>Tastey</td>
+      <td>120cal</td>
+      <td>7.5/10</td>
+    </tr>
+    <tr>
+      <td>Snickerdoodle</td>
+      <td>Delicious</td>
+      <td>95cal</td>
+      <td>8/10</td>
+    </tr>
+    <tr>
+      <td>Oatmeal Raisin</td>
+      <td>Superb</td>
+      <td>10cal</td>
+      <td>11/10</td>
+    </tr>
+  </tbody>
+</table>
 
 
 		<footer class="footer">
