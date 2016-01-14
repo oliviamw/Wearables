@@ -1,8 +1,8 @@
-@include tabs-title;
-
 $font-stack:    Helvetica, sans-serif;
 $primary-color: #333;
 $background: #555555;
+$white: #FFFFFF;
+
 
 body {
   font: 100% $font-stack;
@@ -102,4 +102,52 @@ body {
       padding: 0 0.4rem 0 0.8rem;
     }
   }
+}
+
+table{
+
+  text-align: center;
+
+  th {
+    margin: 20px;
+    padding: 5px;
+    list-style: georgian;
+  }
+
+  td { 
+
+    margin: 20px;
+    padding: 5px;
+
+   }
+
+   img{
+
+    width: 150px;
+   }
+}
+
+
+nav{
+  margin:10px;
+  background-image: "Slider2.jpg";
+
+  ul{
+
+    color: $white;
+
+  }
+
+}
+
+
+@mixin background($imgpath,$position:0 0,$repeat: no-repeat) {
+    background: {
+        image: url($imgpath);
+        position: $position;
+        repeat: $repeat;
+    }
+}
+.testing {
+    @include background('/my/img/path.png');
 }
