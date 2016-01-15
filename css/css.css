@@ -1,7 +1,13 @@
+#types {
+  background-color: #1e6a7a; }
+
+h2 {
+  color: #FFFFFF;
+  background-image: url("../img/Slider2.jpg");
+  font: Helvetica; }
+
 body {
-  font: 100% Helvetica, sans-serif;
-  color: #333;
-  background-color: #555555; }
+  font: 100% Helvetica, sans-serif; }
 
 p {
   color: #225533; }
@@ -83,9 +89,13 @@ nav {
   nav ul {
     color: #FFFFFF; }
 
-.testing {
-  background-image: url("/my/img/path.png");
-  background-position: 0 0;
-  background-repeat: no-repeat; }
+.media-object {
+  margin: 0 auto;
+  width: 500px; }
+  .media-object img {
+    width: 500px; }
+
+#rein {
+  display: none; }
 
 /*# sourceMappingURL=css.css.map */

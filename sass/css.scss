@@ -3,12 +3,48 @@ $primary-color: #333;
 $background: #555555;
 $white: #FFFFFF;
 
+@mixin background($imgpath,$position:0 0,$repeat: no-repeat) {
+    background: {
+        image: url($imgpath);
+        position: $position;
+        repeat: $repeat;
+    }
+}
 
+@mixin color ($color, $backgroundcolor, $font){
+      color: $color;
+      background-image: url($backgroundcolor);
+      font: $font;
+}
+
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@mixin background2($color){
+  background:{
+    color: $color;
+
+  }
+}
+
+
+
+#types{
+
+  @include background2(#1e6a7a);
+}
+h2{
+
+@include color($white,"../img/Slider2.jpg", Helvetica);
+
+}
 body {
   font: 100% $font-stack;
-  color: $primary-color;
-  background-color: $background;
-
 }
 
 p{
@@ -60,13 +96,7 @@ body {
 }
 
 
-@mixin vertical-align {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
+
 
 
 
@@ -141,13 +171,14 @@ nav{
 }
 
 
-@mixin background($imgpath,$position:0 0,$repeat: no-repeat) {
-    background: {
-        image: url($imgpath);
-        position: $position;
-        repeat: $repeat;
-    }
+.media-object{
+  margin: 0 auto;
+  width: 500px;
+  img{
+
+    width: 500px;
+   }
+
 }
-.testing {
-    @include background('/my/img/path.png');
-}
+
+#rein {display: none;}
