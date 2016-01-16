@@ -33,6 +33,20 @@ $blue: #1e6a7a;
   }
 }
 
+
+.breadcrumbs{
+
+  padding: 1%;
+  @include background2($blue);
+}
+#price{
+  @include color (#000000, "../img/Slider2.jpg", helvetica);
+}
+
+#types{
+  @extend #price;
+}
+
 h1{
   margin: 5%;
   color: $white;
@@ -42,12 +56,18 @@ h1{
   }
 }
 
+.stack{
+  width: 80%;
+  margin: 10%;
+}
+
 .accordion{
   width: 80%;
   text-align: center;
   margin: 10%;
-  @include background2($blue);
+  //@include background2($blue);
 
+  @extend #price;
   a{
     font-size: 12pt;
     color: $white;
@@ -68,8 +88,8 @@ h1{
 
 
 h2{
-
-@include color($white,"../img/Slider2.jpg", Helvetica);
+  @extend #types;
+  ;
 
 }
 body {

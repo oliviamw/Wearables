@@ -1,3 +1,12 @@
+.breadcrumbs {
+  padding: 1%;
+  background-color: #1e6a7a; }
+
+#price, #types, h2, .accordion {
+  color: #000000;
+  background-image: url("../img/Slider2.jpg");
+  font: helvetica; }
+
 h1 {
   margin: 5%;
   color: #FFFFFF;
@@ -5,24 +14,22 @@ h1 {
   h1 .index {
     text-align: center; }
 
+.stack {
+  width: 80%;
+  margin: 10%; }
+
 .accordion {
   width: 80%;
   text-align: center;
-  margin: 10%;
-  background-color: #1e6a7a; }
+  margin: 10%; }
   .accordion a {
     font-size: 12pt;
     color: #FFFFFF; }
   .accordion .accordion-content p {
     color: #FFFFFF; }
 
-#types {
+#types, h2 {
   background-color: #1e6a7a; }
-
-h2 {
-  color: #FFFFFF;
-  background-image: url("../img/Slider2.jpg");
-  font: Helvetica; }
 
 body {
   font: 100% Helvetica, sans-serif; }
