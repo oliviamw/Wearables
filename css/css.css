@@ -1,22 +1,14 @@
+.collapes {
+  width: 300px; }
+
 .breadcrumbs {
   padding: 1%;
   background-color: #1e6a7a; }
 
-#price, #types, h2, .accordion {
+#price, #blog, #types, h2, .accordion {
   color: #000000;
   background-image: url("../img/Slider2.jpg");
   font: helvetica; }
-
-h1 {
-  margin: 5%;
-  color: #FFFFFF;
-  text-align: center; }
-  h1 .index {
-    text-align: center; }
-
-.stack {
-  width: 80%;
-  margin: 10%; }
 
 .accordion {
   width: 80%;
@@ -28,8 +20,29 @@ h1 {
   .accordion .accordion-content p {
     color: #FFFFFF; }
 
+.tabs-title {
+  color: #1e6a7a;
+  background-image: url("../img/connect.png");
+  font: helvetica; }
+  .tabs-title a {
+    font: helvetica;
+    font-size: 12pt;
+    font-weight: normal;
+    color: #FFFFFF; }
+
 #types, h2 {
   background-color: #1e6a7a; }
+
+h1 {
+  margin: 5%;
+  color: #FFFFFF;
+  text-align: center; }
+  h1 .index {
+    text-align: center; }
+
+.stack {
+  width: 80%;
+  margin: 10%; }
 
 body {
   font: 100% Helvetica, sans-serif; }
@@ -98,13 +111,10 @@ body {
 
 table {
   text-align: center; }
-  table th {
+  table th, table td {
     margin: 20px;
     padding: 5px;
     list-style: georgian; }
-  table td {
-    margin: 20px;
-    padding: 5px; }
   table img {
     width: 150px; }
 
@@ -114,11 +124,9 @@ nav {
   nav ul {
     color: #FFFFFF; }
 
-.media-object {
+.media-object, .media-object img {
   margin: 0 auto;
   width: 500px; }
-  .media-object img {
-    width: 500px; }
 
 #rein {
   display: none;

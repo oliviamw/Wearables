@@ -1,8 +1,12 @@
+
+//VARIABLEN
 $font-stack:    Helvetica, sans-serif;
 $primary-color: #333;
 $background: #555555;
 $white: #FFFFFF;
 $blue: #1e6a7a;
+
+//MIXINS
 
 @mixin background($imgpath,$position:0 0,$repeat: no-repeat) {
     background: {
@@ -33,7 +37,20 @@ $blue: #1e6a7a;
   }
 }
 
+@mixin extra($font, $size, $weight ){
+  font: $font;
+  font-size: $size;
+  font-weight:$weight;
+}
 
+.collapes{
+  width: 300px;
+}
+
+//EXTENDS
+#blog{
+  @extend #price;
+}
 .breadcrumbs{
 
   padding: 1%;
@@ -45,20 +62,6 @@ $blue: #1e6a7a;
 
 #types{
   @extend #price;
-}
-
-h1{
-  margin: 5%;
-  color: $white;
-  text-align: center;
-  .index{
-    text-align: center;
-  }
-}
-
-.stack{
-  width: 80%;
-  margin: 10%;
 }
 
 .accordion{
@@ -76,11 +79,20 @@ h1{
   .accordion-content{
     p{
       color: $white;
+
     }
     
   }
 }
 
+.tabs-title{
+
+  @include color($blue, "../img/connect.png", helvetica);
+  a{
+    @include extra (helvetica, 12pt, normal );
+    color: $white;
+  }
+}
 #types{
 
   @include background2($blue);
@@ -89,9 +101,25 @@ h1{
 
 h2{
   @extend #types;
-  ;
-
+  
 }
+h1{
+  margin: 5%;
+  color: $white;
+  text-align: center;
+  .index{
+    text-align: center;
+  }
+}
+
+.stack{
+  width: 80%;
+  margin: 10%;
+}
+
+
+
+
 body {
   font: 100% $font-stack;
 }
@@ -195,8 +223,7 @@ table{
 
   td { 
 
-    margin: 20px;
-    padding: 5px;
+    @extend th;
 
    }
 
@@ -225,16 +252,13 @@ nav{
   width: 500px;
   img{
 
-    width: 500px;
+    @extend .media-object;
    }
 
 }
 
 #rein {
   display: none;
-
- 
-
   padding-bottom: 29.34%;
 
   iframe{
