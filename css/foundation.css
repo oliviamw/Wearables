@@ -1839,7 +1839,7 @@ select {
   position: relative;
   border-bottom: 1px solid #e6e6e6; }
   .accordion-title:hover, .accordion-title:focus {
-    background-color: #e6e6e6; }
+    background-color: #333; }
   :last-child > .accordion-title {
     border-bottom-width: 0; }
   .accordion-title::before {

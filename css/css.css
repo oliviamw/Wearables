@@ -1,3 +1,21 @@
+h1 {
+  margin: 5%;
+  color: #FFFFFF;
+  text-align: center; }
+  h1 .index {
+    text-align: center; }
+
+.accordion {
+  width: 80%;
+  text-align: center;
+  margin: 10%;
+  background-color: #1e6a7a; }
+  .accordion a {
+    font-size: 12pt;
+    color: #FFFFFF; }
+  .accordion .accordion-content p {
+    color: #FFFFFF; }
+
 #types {
   background-color: #1e6a7a; }
 
@@ -96,6 +114,11 @@ nav {
     width: 500px; }
 
 #rein {
-  display: none; }
+  display: none;
+  padding-bottom: 29.34%; }
+  #rein iframe {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%; }
 
 /*# sourceMappingURL=css.css.map */
